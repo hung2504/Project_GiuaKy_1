@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityB">
+
+    <ImageView
+        android:id="@+id/imgCloth1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </ImageView>
+    <TextView
+        android:id="@+id/tvname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/imgCloth1"
+        android:text="Name Cloth"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="30dp">
+    </TextView>
+    <TextView
+        android:id="@+id/tvPrice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/tvname1"
+        android:text="Price Cloth"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/tvname1"
+        android:layout_marginLeft="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="30dp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/tvSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvname1"
+        android:text="SIZE"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="@id/tvname1">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/imgButtonX"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/x"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/tvSize"
+        app:layout_constraintStart_toStartOf="@id/tvSize"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal">
+    </ImageButton>
+    <ImageButton
+        android:id="@+id/imgButtonL"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/l"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="@id/imgButtonX"
+        app:layout_constraintStart_toEndOf="@id/imgButtonX"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_horizontal">
+    </ImageButton>
+    <ImageButton
+        android:id="@+id/imgButtonXL"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/xl"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="@id/imgButtonL"
+        app:layout_constraintStart_toEndOf="@id/imgButtonL"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_horizontal">
+    </ImageButton>
+    <ImageButton
+        android:id="@+id/imgButtonS"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/s"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="@id/imgButtonXL"
+        app:layout_constraintStart_toEndOf="@id/imgButtonXL"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_horizontal">
+    </ImageButton>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="#F19F00"
+        android:backgroundTint="#F19F00"
+        android:text="Add to bag"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:backgroundTint="#F19F00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgButtonL">
+
+    </Button>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
